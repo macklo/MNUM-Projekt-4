@@ -1,7 +1,9 @@
-function [  ] = zad2( podzial1,podzial2, podpkt )
+function [ t  ] = zad2( podzial1,podzial2, podpkt )
 wart = [8,7;10,0;0,0.3;0.001,0.02];
     [x1,x2,err1,err2,t]= pk(podzial1, wart(podpkt,1),wart(podpkt,2),podpkt);
     [x1p,x2p,err1p,err2p,tp]= pk(podzial2, wart(podpkt,1),wart(podpkt,2),podpkt);
+    
+    time
     
     figure()
     hold on

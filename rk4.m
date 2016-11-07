@@ -1,5 +1,4 @@
 function [ x1,x2, err1, err2, t ] = rk4( podzial,war1, war2, podpkt)
-% podzial - ile punktów mamy w danym przedziale (>=2)
 skok=20/(podzial);
 skokh=20/(podzial*2);
 x1(1)=war1;
@@ -39,7 +38,5 @@ end
 err1 =(16/15) * abs(x1h - x1);
 err2 =(16/15) * abs(x2h - x2);
 t = toc;
-
-
 end
 
